@@ -57,4 +57,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Image
 
-![App Screenshot](python-kivy/test.jpg)
+![App Screenshot](python-kivy/test1.jpg)
