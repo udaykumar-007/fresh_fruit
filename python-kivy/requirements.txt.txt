@@ -1,0 +1,6 @@
+kivy==2.2.1
+ultralytics==8.0.120
+langchain==0.0.256
+opencv-python==4.8.0.74
+langchain-google-genai==2.0.6
+python-dotenv==1.0.1
