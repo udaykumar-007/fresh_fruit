@@ -70,6 +70,11 @@ This application detects the freshness of fruits and vegetables using AI-powered
 ## Installation(Android)
 Download and install apk using the link given in the repository. 
 
+## Demo Video
+
+[![Watch the demo video]()](android-app/demo.mp4)
+
+
 ## Acknowledgements
 - YOLOv8s for object detection
 - Kivy for the mobile interface
