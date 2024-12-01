@@ -72,7 +72,7 @@ Download and install apk using the link given in the repository.
 
 ## Demo Video
 
-[![Watch the demo video]()](android-app/demo.mp4)
+Demo video is given in repo.
 
 
 ## Acknowledgements
