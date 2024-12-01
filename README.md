@@ -1,19 +1,45 @@
 # Fruit & Vegetable Freshness Detection App
 
-This App detects whether a fruit or vegetable is fresh or not based on images captured using a Kivy-based camera application. The application uses the YOLOv8s model for object detection to identify all the objects in the captured image. Once the objects are detected, the app sends the detected objects to gemini-1.5-flash-latest to determine if the fruit or vegetable is fresh or not, color indication green being fresh red being not. Same is built in Android-studio written in Java.
+This application detects the freshness of fruits and vegetables using AI-powered object detection and analysis. It supports both Python-based systems and Android devices for seamless image capturing, object detection, and freshness evaluation.
+
+---
+
 ## Features
-- **Object Detection:** Uses the YOLOv8s model to detect fruits and vegetables in images captured by the camera.
-- **Freshness Analysis:** A multimodal LLM model evaluates the freshness of detected objects based on image features and predefined criteria.
-- **Kivy Interface:** A user-friendly interface built using the Kivy framework to capture images and display results.
+
+- **AI Object Detection:**  
+  Detects fruits and vegetables using the YOLOv8s model.  
+  - **Python Version:** YOLOv8s for detailed and accurate analysis.  
+  - **Android Version:** YOLOv8-nano (ONNX) for lightweight and faster detection on mobile devices.  
+
+- **Freshness Analysis:**  
+  Assesses freshness using the Google Gemini API integrated via LangChain.  
+  - **Result Indicators:**  
+    - 🟢 **Green:** Fresh  
+    - 🔴 **Red:** Not Fresh  
+
+- **Cross-Platform Support:**  
+  - **Python App:** Built with Kivy for image capture and displaying results.  
+  - **Android App:** Optimized for mobile with threaded Gemini API requests.
+
+---
 
 ## Requirements
-- Python 3.x
-- Kivy
-- YOLOv8s model (ONNX format for Android)
-- Gemini API
-- OpenCV or other image processing libraries
 
-## Installation
+### Python
+- Python 3.x  
+- Kivy  
+- YOLOv8s model (ONNX compatible for Android)  
+- Gemini API integration (via LangChain)  
+- OpenCV or similar image processing library  
+
+### Android
+- Android Studio  
+- YOLOv8-nano ONNX model for object detection  
+- Gemini API for freshness analysis  
+
+---
+
+## Installation(Python)
 
 1. Clone the repository:
     ```bash
@@ -40,6 +66,9 @@ This App detects whether a fruit or vegetable is fresh or not based on images ca
 3. The app will detect the objects in the image and then use the Gemini API to analyze if the detected items are fresh.
 
 4. The freshness status will be displayed on the screen.
+
+## Installation(Android)
+Download and install apk using the link given in the repository. 
 
 ## Contributing
 
