@@ -1,7 +1,6 @@
 # Fruit & Vegetable Freshness Detection App
 
-This app detects whether a fruit or vegetable is fresh or not based on images captured using a Kivy-based camera application. The application uses the YOLOv8s model for object detection to identify fruits and vegetables in the captured image. Once the objects are detected, the app sends the detected objects to a multimodal LLM (Large Language Model) to determine if the fruit or vegetable is fresh or not.
-
+This app detects whether a fruit or vegetable is fresh or not based on images captured using a Kivy-based camera application. The application uses the YOLOv8s model for object detection to identify all the objects in the captured image. Once the objects are detected, the app sends the detected objects to gemini-1.5-flash-latest to determine if the fruit or vegetable is fresh or not, color indication green being fresh red being not.
 ## Features
 - **Object Detection:** Uses the YOLOv8s model to detect fruits and vegetables in images captured by the camera.
 - **Freshness Analysis:** A multimodal LLM model evaluates the freshness of detected objects based on image features and predefined criteria.
@@ -10,8 +9,8 @@ This app detects whether a fruit or vegetable is fresh or not based on images ca
 ## Requirements
 - Python 3.x
 - Kivy
-- YOLOv8s model (ONNX format recommended for compatibility)
-- Pretrained multimodal LLM model (for freshness classification)
+- YOLOv8s model (ONNX format for Android)
+- Gemini API
 - OpenCV or other image processing libraries
 
 ## Installation
@@ -38,7 +37,7 @@ This app detects whether a fruit or vegetable is fresh or not based on images ca
 
 2. Capture an image of a fruit or vegetable using the Kivy interface.
 
-3. The app will detect the objects in the image and then use the multimodal LLM to analyze if the detected items are fresh.
+3. The app will detect the objects in the image and then use the Gemini API to analyze if the detected items are fresh.
 
 4. The freshness status will be displayed on the screen.
 
@@ -46,14 +45,10 @@ This app detects whether a fruit or vegetable is fresh or not based on images ca
 
 Feel free to fork the repository, create a branch, and submit a pull request with your improvements or fixes. Contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 - YOLOv8s for object detection
 - Kivy for the mobile interface
-- [Multimodal LLM model](#) for freshness classification
+- Google Gemini for freshness classification
 
 ## Image
 
