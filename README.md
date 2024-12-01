@@ -52,7 +52,7 @@ This application detects the freshness of fruits and vegetables using AI-powered
     pip install -r requirements.txt
     ```
 
-3. If you haven't already, download the YOLOv8s model and place it in the `models/` directory.
+3. If you haven't already, download the YOLOv8s model.
 
 ## Usage
 
