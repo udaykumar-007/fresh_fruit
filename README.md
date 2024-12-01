@@ -1,6 +1,6 @@
 # Fruit & Vegetable Freshness Detection App
 
-This app detects whether a fruit or vegetable is fresh or not based on images captured using a Kivy-based camera application. The application uses the YOLOv8s model for object detection to identify all the objects in the captured image. Once the objects are detected, the app sends the detected objects to gemini-1.5-flash-latest to determine if the fruit or vegetable is fresh or not, color indication green being fresh red being not.
+This App detects whether a fruit or vegetable is fresh or not based on images captured using a Kivy-based camera application. The application uses the YOLOv8s model for object detection to identify all the objects in the captured image. Once the objects are detected, the app sends the detected objects to gemini-1.5-flash-latest to determine if the fruit or vegetable is fresh or not, color indication green being fresh red being not. Same is built in Android-studio written in Java.
 ## Features
 - **Object Detection:** Uses the YOLOv8s model to detect fruits and vegetables in images captured by the camera.
 - **Freshness Analysis:** A multimodal LLM model evaluates the freshness of detected objects based on image features and predefined criteria.
